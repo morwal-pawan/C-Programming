@@ -1,0 +1,40 @@
+
+ one pass linker...
+
+tp_origin:500
+p_size:42
+lp_origin:900
+rf:400
+
+TOTAL	PD	541
+MAX	EXT	0
+ALPHA	EXT	0
+A	PD	540
+LOOP	PD	501
+
+ after reallocation....
+
+TOTAL	PD	941
+MAX	EXT	0
+ALPHA	EXT	0
+A	PD	940
+LOOP	PD	901
+
+ two pass linker...
+
+
+ after linking....
+
+TOTAL	PD	941
+MAX	EXT	980
+ALPHA	EXT	973
+A	PD	940
+LOOP	PD	901
+
+reallocated  machine code...
+
+900	START	00
+900	READ	09
+918	MOVER	04
+938	BC	06
+939	STOP	00

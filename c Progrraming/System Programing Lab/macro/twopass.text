@@ -1,0 +1,51 @@
+
+
+
+TWO PASS MACRO 
+macro defination:
+
+MACRO
+CLEARMEM	&X	&N	&REG = AREG	 
+LCL			&M
+&M	SET	0
+MOVER	&REGG, ='0'
+MORE	MOVEM	&REG	&X	+	&M
+&M	SET	&M+1
+AIF	( &M NE &N )	.MORE
+MEND	
+
+
+-------------------------------------
+
+ expanded code....
+
+START 101
+READN
+MOVERBREG, ONE
+MOVEM BREG,TERM
+AGAIN MULT BREG, TERM
+MOVER CREG, TERM
+macro calling...
+
+ starting of macro expansion...
+ LCL &M
+&M SET 0
+MOVER &REGG,='0'
+MORE MOVEM AREG B + &M
+&M SET &M+1
+AIF (&MNE3) .MORE
+MEND MEND
+MEND
+ADD CREG, ONE
+MOVEM CREG, TERM
+COMP CREG, N
+BC LE, AGAIN
+MOVEM BREG, RESULT
+PRINT RESULT
+STOP
+N DS 1
+RESULT DS 1
+ONE DC '1'
+TERM DS 1
+END
+END

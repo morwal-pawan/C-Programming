@@ -1,0 +1,24 @@
+
+ ...ONE PASS MACRO ...
+
+
+macro name table(NTAB):-: 
+
+CLEARMEM
+------------------------------
+
+ macro perameter(PNTAB):-
+
+&X
+&N
+&REG = AREG
+
+
+ no. of positional perameter:(pp):2
+
+ no. of keyword perameter:(kp):1
+----------------------------------
+
+sequential symbols(SSTAB):-	MORE
+
+-----------------------------------

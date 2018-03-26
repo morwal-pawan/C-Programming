@@ -1,0 +1,9 @@
+#include<sys/time.h>
+
+struct timeval tim;
+double time_start,time_end;
+gettimeofday(&tim,NULL);
+time_start=(double)tim.tv_sec+(double)(tim.tv_usec/1000000.0);
+.............call any fuction for which we want to calculata time...............
+time_end=(double)tim.tv_sec+(double)(tim.tv_usec/1000000.0);
+printf("time taken in selection sorting is %f\n",(time_end-time_start));

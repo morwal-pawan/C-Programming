@@ -1,0 +1,31 @@
+#!/bin/bash
+j=`expr 1`
+for (( l=5;l>=1;l-- ))
+do
+	for (( i=1;i<=l;i++ ))
+	do
+		echo -n " "
+	done
+		for (( k=1;k<=j;k++ ))
+		do
+			echo -n "* "
+		done
+	echo ""
+	j=`expr $j + 1`
+done
+j=`expr 1`
+for (( l=5;l>=1;l-- ))
+do
+	for (( i=1;i<=j;i++ ))
+	do
+		echo -n " "
+	done
+		for (( k=1;k<=l;k++ ))
+		do
+			echo -n "* "
+		done
+	echo ""
+	j=`expr $j + 1`
+done
+
+

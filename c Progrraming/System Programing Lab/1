@@ -1,0 +1,21 @@
+#!/bin/sh
+echo "user name is:" $USER
+echo "operating system type:"
+uname
+echo "current shell is:"$SHELL
+echo "present working directory is:"
+pwd
+echo "home directory is:$HOME"
+echo "path setting is:$PATH"
+echo "all available shells are:"
+cat /etc/shells
+echo "vesion of os:"
+cat /etc/*-release
+echo "kernel number:"
+uname -mrsrn
+echo "currently logged users:"
+w
+echo "cpu informations:"
+more/proc/cpuinfo
+echo "harddisk informations:"
+df -h
